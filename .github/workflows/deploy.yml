@@ -1,0 +1,53 @@
+name: Deploy Unified Designs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Build Blog (Pelican)
+        run: |
+          uv sync
+          uv run pelican -s pelicanconf.py
+
+      - name: Build Projects Portfolio
+        working-directory: projects_portfolio
+        run: |
+          uv sync
+          uv run build.py
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 138.197.8.215 >> ~/.ssh/known_hosts
+
+      - name: Deploy Blog (writing.unified-designs.com)
+        run: |
+          rsync -avz --delete output/ root@138.197.8.215:/var/www/writing.unified-designs.com/html/
+
+      - name: Deploy Projects (projects.unified-designs.com)
+        run: |
+          rsync -avz --delete projects_portfolio/public/ root@138.197.8.215:/var/www/projects.unified-designs.com/html/
+
+      - name: Deploy Root Landing (unified-designs.com)
+        run: |
+          rsync -avz --delete root_landing/public/ root@138.197.8.215:/var/www/unified-designs.com/html/
