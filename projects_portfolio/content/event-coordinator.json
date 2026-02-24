@@ -1,0 +1,7 @@
+{
+    "title": "Group Event Coordinator",
+    "description": "A lean prototype for coordinating in-person group events with AI-powered scheduling assistance. Built with React, TypeScript, and Supabase, it allows users to create events, invite friends, and let an intelligent agent negotiate the best time and location based on everyone's constraints and availability.",
+    "demo_url": "http://138.197.8.215:8080",
+    "repo_url": "",
+    "order": 1
+}
