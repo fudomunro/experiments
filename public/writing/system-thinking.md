@@ -5,7 +5,9 @@ Tags: misc
 Slug: system-thinking
 
 
-I wanted to write about System Thinking, as it applies to me. I am able to evaluate conceptual systems in my head, running simulations through them to try to solve problems. I've known for a long time that most people can't/don't do that, and that it might be a sign I'm on the autism spectrum. 
+I wanted to write about System Thinking, as it applies to me.
+
+I am able to evaluate conceptual systems in my head, running simulations through them to try to solve problems. I've known for a long time that most people can't/don't do that, and that it might be a sign I'm on the autism spectrum. 
 
 About a decade ago I discovered I have aphantasia, which in my case means I have no visual memory, though I do see things in my head, they are impossible to pin down and extract information from. I've come to suspect that this relates to my way of thinking, because I'm unable to process the world using images, and rely on managing concepts instead. I haven't done any research on the connection between aphantasia and systems thinking, but I do understand there to be a connection between aphantasia and autism.
 
@@ -26,5 +28,3 @@ To give one more example of how this manifests: I've been working remotely for 1
 In the last couple of years, I haven't been drinking, and I've been working to build strong work-peer relationships. This has enabled me to observe that most people, even those with a fair bit more time in leadership roles, don't have this sixth sense, and are often surprised by organizational changes. For me, if I think about where I want our product to be in 5 years, I'm also going to think about how our organizational will need to be shaped to deliver that product, and start mapping out the necessary transitions to get there from here.
 
 I know that's just a planning activity many engineers will be familiar with, but it's happening constantly in my head, and in there, I'm also considering what my kids college tuition will be at that point, who might be President, and whether my old colleague from 20 years ago would be interested in working with me on some aspect of it. Then, when I start talking post-secondary education with Ruby, I'm also doing it in the context of this System.
-
-This creates a sort of ambient awareness of organizational dynamics, which I should be able to leverage to great impact, but so far it's mostly just been to put bandaids on gaping wounds.
