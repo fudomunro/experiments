@@ -27,6 +27,10 @@ jobs:
           uv sync
           uv run pelican -s pelicanconf.py
 
+      - name: Build Alongside Site
+        run: |
+          uv run pelican alongside/content -o alongside/output -s alongside/pelicanconf.py -t alongside/theme
+
       - name: Build Projects Portfolio
         working-directory: projects_portfolio
         run: |
@@ -43,6 +47,10 @@ jobs:
       - name: Deploy Blog (writing.unified-designs.com)
         run: |
           rsync -avz --delete output/ root@138.197.8.215:/var/www/writing.unified-designs.com/html/
+
+      - name: Deploy Alongside (alongsidens.ca/v2)
+        run: |
+          rsync -avz --delete alongside/output/ root@138.197.8.215:/srv/main/sites/alongside2/v2/
 
       - name: Deploy Projects (projects.unified-designs.com)
         run: |

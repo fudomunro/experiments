@@ -1,9 +1,10 @@
 .DS_Store
 output
+alongside/output
 __pycache__
--e 
+-e
 secret
 blogger-feed.xml
--e 
+-e
 projects_portfolio/.venv
 projects_portfolio/public
