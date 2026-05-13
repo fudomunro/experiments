@@ -10,7 +10,7 @@ subtitle: Providing compassionate, expert care tailored to the unique health and
 
 All of Alongside management and staff are knowledgeable at a practical, emotional, and personal level with dementia care. We promise our clients to be cared for with respect and dignity, while balancing independence that's safe for the individual.
 
-![Dementia care support](images/alongside-website-photo.jpg)
+![Dementia care support](/images/alongside-website-photo.jpg)
 
 </section>
 

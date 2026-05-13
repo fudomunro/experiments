@@ -12,7 +12,7 @@ You will be expected to live in clients' homes on a 1-week or 2-week rotation. W
 
 We seek integrity and commitment first and foremost. Patience is a virtue and a must when working with the elderly. Many clients present cognitive issues, like early dementia. An employee's commitment to care and respect for the client's dignity must be central so that the senior and their family feel you are alongside them in their daily living and supporting their well-being.
 
-![Compassionate caregivers](images/seniors-image.jpg)
+![Compassionate caregivers](/images/seniors-image.jpg)
 
 </section>
 

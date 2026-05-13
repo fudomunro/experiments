@@ -1,4 +1,4 @@
-Title: Frequently Asked Questions
+Title: F.A.Q.
 Slug: faqs
 Template: faq
 
