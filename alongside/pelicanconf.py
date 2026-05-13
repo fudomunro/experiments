@@ -48,5 +48,13 @@ SOCIAL = (("Facebook", "https://www.facebook.com/Alongside-Live-In-Home-Support-
 
 DEFAULT_PAGINATION = False
 
+# Markdown settings
+MARKDOWN = {
+    "extension_configs": {
+        "md_in_html": {},
+    },
+    "extensions": ["md_in_html"],
+}
+
 # Use document-relative URLs for easier staging in a subdirectory
 RELATIVE_URLS = True

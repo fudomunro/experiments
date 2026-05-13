@@ -4,34 +4,30 @@ Template: faq
 
 ### General Questions
 
+#### What is a live-In home support worker for the elderly ?
+A live-In home support worker is qualified individual who assists with all activities of daily living including personal care, meal planning and preparation, light housekeeping and laundry. The support worker remains in the home with the client for one or two week rotations.
+
 #### What areas do you serve?
-Alongside provides live-in home support services throughout the province of Nova Scotia. We frequently serve clients in the Annapolis Valley, HRM, and Cape Breton.
+Alongside Live-In Home Support serves every county of Nova Scotia with offices in the Annapolis Valley and Cape Breton.
 
-#### What is "live-in" home support?
-Live-in home support means a caregiver resides in the client's home for a set rotation (usually 1 or 2 weeks) to provide 24-hour consistency and care. This allows seniors to age in place safely and comfortably.
-
-#### How many caregivers will be in my home?
-We prioritize consistency. We aim to have no more than three regular caregivers rotating for any single household, ensuring they become familiar with the client's routines and needs.
+#### What services do you offer?
+Alongside Live-In Home Support services include both long term or short term plans. We are available for those seeking support after being released from hospital to recover at home to those seeking ongoing support at home. We also offer respite and palliative support.
 
 ### Services and Costs
 
-#### Do you offer a free consultation?
-Yes, we start with a free in-home consultation (up to 1 hour) to assess needs and develop a personal care plan.
+#### What are your service fees ? 
+Alongside Live-In Home Support provides a free in home consultation and upon assessment we provide provide a cost effective solution to fulfill your home support needs.
 
-#### How is the service billed?
-Unlike many agencies that bill hourly, Alongside bills on a daily rate. This is often more cost-effective for families requiring around-the-clock support and eliminates additional fees like travel for the caregiver.
-
-#### Can you help with veterans' funding?
-Yes. We have great respect for Canadian Veterans and can assist you or your loved one in connecting with available support and funding for live-in home care.
+#### Is there funding to help offset financial costs?
+Yes in most cases there is funding available through Home First and Direct Funding.
 
 ### Caregiver Information
 
 #### Are your caregivers insured?
-Yes, all Alongside caregivers are bonded, insured, and licensed.
+Yes all our workers are insured and covered under WCB.
 
-#### What kind of checks do you perform on staff?
-Every employee must provide current Criminal Record and Vulnerable Sector Checks, along with valid CPR/First Aid certification and professional references.
+#### What are the your support workers qualifications?
+Our workers come highly qualified. All have been vetted and have backgrounds in care. They all have current certificates in CPR/ FIrst Aid and a clean vulnerable sector check.
 
 ### Still have questions?
-
 If you have a question that isn't answered here, please feel free to reach out to us directly through the contact information in our footer. We are here to help!
