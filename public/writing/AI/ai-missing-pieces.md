@@ -1,6 +1,8 @@
 Title: A bunch of thoughts on AI
 Date: 2026-03-17 00:10
 Category: Writing
+Slug: ai-missing-pieces
+Lang: en
 
 # Preface
 
@@ -53,6 +55,8 @@ If we have a tool that reproduces patterns it has seen before, how do we make su
 If we can make all the coding patterns in our codebase 'the best" at a trivial cost, that means a new pattern being introduced is a higher value event for us. Something that is good for us to see, because the marginal impact of the pattern itself is now greater than the cost. So more changes means even more value for us, so we will probably do what we can to encourage more changes. We might send our improvements upstream more reliably, knowing they could instantly be of benefit to everyone, resulting in ever more high quality libraries being developed and utilized.
 
 Now, some of the above are more "maybes" then definitelys, but I think they are influencable. For example, we can create skills and agents.md files that encourage agents to behave in this way, and perhaps embed them in tools for library management, even allowing the agents maintaining the codebase the directive to push changes upstream for their peers to grab, rather than patching things locally. Those upstream libraries could even have some mechanism for automatically merging these changes, perhaps by waiting for multiple identical change requests from downstream agents, suggesting general support for the change.
+
+Another concern in this area, though perhaps it deserves its own bullet point, is the change in tooling and process that successful LLM-supported development will provoke. [This LinkedIn post has the gist](https://www.linkedin.com/feed/update/urn:li:share:7436598186993106944/). While there's an abundance of patterns already emerging, it again feels reactive and unequal, as well as incredibly hard to guage for likelihood of success. I think one reason this wasn't a separate bullet for me is that is feels TOO obvious.
 
 ### Ephemeral code
 
