@@ -15,8 +15,6 @@ We provide respectful assistance with personal care tasks to help our clients fe
 - Colostomy care and other specialized hygiene needs
 - Mobility support (walkers, wheelchairs, and cane use)
 
-![Assisting with personal care](/images/shoe-tie-senior.jpg)
-
 </section>
 
 <section markdown="1">
@@ -30,8 +28,6 @@ Maintaining a clean and organized home is essential for safety and peace of mind
 - Cleaning the fridge and vacuuming
 - General home safety checks and security
 
-![Senior in a clean home environment](/images/senior-tea.jpg)
-
 </section>
 
 <section markdown="1">
@@ -44,7 +40,5 @@ We ensure that medications are taken correctly and that family members remain fu
 - **Charting**: We record and log medications and provide a relevant, up-to-date care plan.
 - **Family Communication**: Open communication books and regular updates to identified family contacts.
 - **Refill Coordination**: Reminding family contacts when medication refills are needed.
-
-![Caregiver coordinating care](/images/men-senior-care.jpg)
 
 </section>

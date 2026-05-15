@@ -37,7 +37,6 @@
             type="image/x-icon"
         />
         <link href="{{ SITEURL }}/images/webclip.png" rel="apple-touch-icon" />
-
     </head>
     <body class="body">
         <div
@@ -70,7 +69,7 @@
                         <a
                             href="{{ SITEURL }}/{{ p.url }}"
                             class="navigation-item button w-nav-link"
-                            >{{ p.title }}</a
+                            >{{ p.title if p.slug != 'faqs' else 'F.A.Q.' }}</a
                         >
                         {% endif %} {% endfor %}
                     </nav>
@@ -87,7 +86,7 @@
         </div>
 
         <div class="section">
-            <div class="container">
+            <div class="container" id="{{page.slug}}-content">
                 {% if SHOW_HIRING_BANNER and page and page.slug != 'working' %}
                 <div class="hiring-banner">
                     <div style="font-size: 1.2rem; font-weight: 500">

@@ -13,8 +13,6 @@ subtitle: Supporting independence and quality of life through personalized daily
 - **Shared Activities**: Enjoying movies or favorite TV shows together to promote engagement.
 - **Staying Connected**: Assisting clients in keeping connected to loved ones via phones, laptops, and tablets.
 
-![Caregiver and senior interacting](/images/alongside-website-photo.jpg)
-
 </section>
 
 <section markdown="1">
@@ -26,6 +24,6 @@ We recognize the importance of our clients' diets in supporting wellness and com
 - **Home Cooking**: We provide home cooking and baking to the senior's preference.
 - **Grocery Support**: Assistance with grocery list making and shopping to ensure a well-stocked kitchen.
 
-![Nutritional support and care](/images/med-help-seniors.jpg)
+![Nutritional support and care](/images/men-senior-care.jpg)
 
 </section>

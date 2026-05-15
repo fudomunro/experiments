@@ -12,19 +12,21 @@ You will be expected to live in clients' homes on a 1-week or 2-week rotation. W
 
 We seek integrity and commitment first and foremost. Patience is a virtue and a must when working with the elderly. Many clients present cognitive issues, like early dementia. An employee's commitment to care and respect for the client's dignity must be central so that the senior and their family feel you are alongside them in their daily living and supporting their well-being.
 
-![Compassionate caregivers](/images/seniors-image.jpg)
-
 </section>
 
-## How to Apply
+<section markdown="1">
 
-To apply for a position with Alongside, please follow these instructions:
+> ## How to Apply
+> 
+> To apply for a position with Alongside, please follow these instructions:
+> 
+> 1. **Prepare documents**: Resume, CPR/First Aid certification, and 3 professional references.
+> 2. **Include Phone Number**: Please ensure you include a valid phone number for a screening call.
+> 3. **Submit**: Email documents to [info@alongsidens.ca](mailto:info@alongsidens.ca).
+>
+> *Note: Successful applicants require a clean Criminal Record and Vulnerable Sector Check.*
 
-1. **Prepare documents**: Resume, CPR/First Aid certification, and 3 professional references.
-2. **Include Phone Number**: Please ensure you include a valid phone number for a screening call.
-3. **Submit**: Email documents to [info@alongsidens.ca](mailto:info@alongsidens.ca).
-
-*Note: Successful applicants require a clean Criminal Record and Vulnerable Sector Check.*
+</section>
 
 <section markdown="1">
 

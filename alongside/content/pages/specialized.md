@@ -6,40 +6,25 @@ subtitle: Providing compassionate, expert care tailored to the unique health and
 
 <section markdown="1">
 
-## Dementia Care
+Dementia Care
 
-All of Alongside management and staff are knowledgeable at a practical, emotional, and personal level with dementia care. We promise our clients to be cared for with respect and dignity, while balancing independence that's safe for the individual.
+ - All of Alongside management & staff are knowledgeable at a practical, emotional, and personal level with dementia care
+ - We promise our clients to be cared for with respect and dignity, while balancing independence that’s safe for the individual
 
-![Dementia care support](/images/alongside-website-photo.jpg)
+Respite Care
 
-</section>
+ - Providing care for the caregiver, short or long term
+ - Alongside can provide the support and expertise for you to do so
 
-<section markdown="1">
+Recovery Care
 
-## Respite Care
+ - In-home support post surgery so healing can take place in the therapeutic comforts of home
+ - We can support seniors healing journey whether it be a for weeks or a few months, offer peace of mind to family and friends
 
-Providing care for the primary caregiver, whether short-term or long-term, is essential for maintaining health and balance. Alongside can provide the support and expertise for you to take a much-needed break while ensuring your loved one is in excellent hands.
+Palliative Care
 
-![Respite care services](images/senior-tea.jpg)
+ - We provide compassionate caregivers who are committed to coming alongside your family and your loved one in their end of life journey
+ - Our caregivers are experienced to provide compassionate dedicated care and comfort measures 
 
-</section>
-
-<section markdown="1">
-
-## Recovery Care
-
-We provide in-home support post-surgery so healing can take place in the therapeutic comforts of home. We can support a senior's healing journey whether it be for a few weeks or a few months, offering peace of mind to family and friends during the recovery process.
-
-![Recovery and rehabilitation care](images/walker-assist.jpg)
-
-</section>
-
-<section markdown="1">
-
-## Palliative Care
-
-We provide compassionate caregivers who are committed to coming alongside your family and your loved one in their end-of-life journey. Our caregivers are experienced in providing dedicated care and essential comfort measures with the utmost respect.
-
-![Compassionate palliative care](images/men-senior-care.jpg)
 
 </section>

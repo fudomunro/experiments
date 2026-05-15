@@ -56,6 +56,4 @@ We offer expert care tailored to unique health needs, including specialized supp
 
 At Alongside we have the utmost respect and appreciation for all our brave veterans with the Canadian Armed Forces. If you are a Veteran, we can help you or your loved one to connect with valuable support and funding for live-in home care.
 
-![Caring for veterans](/images/men-senior-care.jpg)
-
 </section>

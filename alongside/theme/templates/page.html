@@ -1,10 +1,13 @@
-{% extends "base.html" %}
-{% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}{{ page.title }} | {{ SITENAME }}{%
+endblock %} {% block content %}
 <div class="intro-header w-clearfix">
     {% if page.header_image %}
-    <img src="{{ SITEURL }}/images/{{ page.header_image }}" loading="lazy" alt="{{ page.header_image_alt }}" class="header-image">
+    <img
+        src="{{ SITEURL }}/images/{{ page.header_image }}"
+        loading="lazy"
+        alt="{{ page.header_image_alt }}"
+        class="header-image"
+    />
     {% endif %}
     <div class="heading-jumbo">{{ page.title }}</div>
 </div>
@@ -15,7 +18,5 @@
 </div>
 {% endif %}
 
-<div class="home-content-wrap">
-    {{ page.content }}
-</div>
+<div class="page-content-wrap">{{ page.content }}</div>
 {% endblock %}
