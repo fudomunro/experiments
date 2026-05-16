@@ -16,7 +16,7 @@ The Co-founders of Alongside Live-In Home Support are Jo-Anne MacDonald and Gary
 
 Seniors and their loved ones face many challenges who find themselves in need of 24hr care. Alongside services can bring you an individualized approach that is both cost effective and caring. Jo-Anne & Gary understand the need for a unique home care plan that suits the individual. They have experienced first hand that a cookie-cutter approach to home care does not honour the uniqueness of each client or their needs—nor that of the families.
 
-![Jo-Anne and Gary](/images/about_us.jpg)
+![Jo-Anne and Gary](../images/about_us.jpg)
 
 Our caregivers are bonded, insured, and licensed. You can be confident a trustworthy individual is entering your/your loved ones home. Our employees are well prepared and meet Alongside standards to help seniors "age in place" in their home whether it be for the short or long term.
 

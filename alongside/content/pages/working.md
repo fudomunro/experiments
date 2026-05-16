@@ -29,7 +29,6 @@ We seek integrity and commitment first and foremost. Patience is a virtue and a 
 </section>
 
 <section markdown="1">
-
 ## What We Provide
 
 - Ongoing, compassionate support from management
@@ -38,6 +37,8 @@ We seek integrity and commitment first and foremost. Patience is a virtue and a 
 - A competitive rate of pay starting at $1400/week
 - Acknowledgement of a job well done
 
+</section>
+<section markdown="1">
 ## What the Client Provides
 
 - A safe, private bedroom

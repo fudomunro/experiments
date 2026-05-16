@@ -6,7 +6,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
         <link
-            href="{{ SITEURL }}/theme/css/style.css"
+            href="{{ SITEURL }}/theme/css/style.css?v=15"
             rel="stylesheet"
             type="text/css"
         />
@@ -74,12 +74,8 @@
                         {% endif %} {% endfor %}
                     </nav>
                     <div class="menu-button w-nav-button">
-                        <img
-                            src="{{ SITEURL }}/images/menu-icon_1menu-icon.png"
-                            width="22"
-                            alt=""
-                            class="menu-icon"
-                        />
+                        {% if page %}{{ page.title if page.slug != 'faqs' else
+                        'F.A.Q.' }}{% else %}Menu{% endif %}
                     </div>
                 </div>
             </div>

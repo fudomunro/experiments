@@ -291,10 +291,12 @@ img {
 }
 
 blockquote {
-    border-left: 5px solid #e2e2e2;
+    border-left: 5px solid #53e477;
+    background-color: #f4faf5;
+    border-radius: 6px;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding: 15px 30px;
+    padding: 25px 30px;
     font-size: 20px;
     line-height: 34px;
 }
@@ -357,10 +359,17 @@ figcaption {
 .w-nav-button {
     position: relative;
     float: right;
-    padding: 18px;
-    font-size: 24px;
+    padding: 12px 48px 12px 18px;
+    font-size: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
     display: none;
     cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #1a1b1f;
+    -webkit-appearance: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -368,13 +377,29 @@ figcaption {
     user-select: none;
 }
 
+.w-nav-button::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #666;
+}
+
 .w-nav-button:focus {
-    outline: 0;
+    outline: none;
+    border-color: #53e477;
 }
 
 .w-nav-button.w--open {
-    background-color: #c8c8c8;
-    color: white;
+    background-color: #f9f9f9;
+    border-color: #53e477;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .w-nav-overlay {
@@ -718,75 +743,58 @@ a.button-link:active {
 }
 
 /* ==========================================================================
-   Markdown Content Grid
+   Markdown Content Sections
    ========================================================================== */
 
-.home-content-wrap section h2 {
-    grid-area: header;
-}
-
-.home-content-wrap section p {
-    grid-area: content;
-}
-
-.home-content-wrap section p:has(img) {
-    grid-area: image;
-}
-
-.home-content-wrap section p:has(a) {
-    grid-area: link;
-}
-
-.home-content-wrap section {
-    display: grid;
-    grid-template-areas:
-        "header image"
-        "content image"
-        "link image";
-    gap: 30px 80px;
-    align-items: center;
+.home-content-wrap section,
+.page-content-wrap section {
     margin-bottom: 80px;
 }
 
-.home-content-wrap section:nth-of-type(even) {
-    grid-template-areas:
-        "image header"
-        "image content"
-        "image link";
+.home-content-wrap section p:has(img):not(.header-image) img,
+.page-content-wrap section p:has(img):not(.header-image) img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
-#services-content section h2 {
-    grid-area: header;
-}
+@media screen and (min-width: 992px) {
+    .home-content-wrap section,
+    #services-content .page-content-wrap section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 20px 80px;
+        align-items: start;
+    }
 
-#services-content section p {
-    grid-area: content;
-}
+    .home-content-wrap section p,
+    #services-content .page-content-wrap section p,
+    .home-content-wrap section h2,
+    #services-content .page-content-wrap section h2 {
+        grid-column: 1;
+    }
 
-#services-content section p:has(img) {
-    grid-area: image;
-}
+    .home-content-wrap section:nth-of-type(even) p,
+    #services-content .page-content-wrap section:nth-of-type(even) p,
+    .home-content-wrap section:nth-of-type(even) h2,
+    #services-content .page-content-wrap section:nth-of-type(even) h2 {
+        grid-column: 2;
+    }
 
-#services-content section p:has(a) {
-    grid-area: link;
-}
+    .home-content-wrap section p:has(img):not(.header-image),
+    #services-content .page-content-wrap section p:has(img):not(.header-image) {
+        grid-column: 2;
+        grid-row: 1 / span 4;
+        margin: 0;
+    }
 
-#services-content section {
-    display: grid;
-    grid-template-areas:
-        "header image"
-        "content image"
-        "link image";
-    gap: 30px 80px;
-    align-items: center;
-    margin-bottom: 80px;
-}
-
-#services-content section:nth-of-type(even) {
-    grid-template-areas:
-        "image header"
-        "image content"
-        "image link";
+    .home-content-wrap section:nth-of-type(even) p:has(img):not(.header-image),
+    #services-content
+        .page-content-wrap
+        section:nth-of-type(even)
+        p:has(img):not(.header-image) {
+        grid-column: 1;
+    }
 }
 
 /* ==========================================================================
@@ -997,25 +1005,9 @@ a.button-link:active {
         margin-bottom: 30px;
     }
 
-    .home-content-wrap section {
-        grid-template-columns: 1fr;
-        gap: 30px;
+    .home-content-wrap section,
+    .page-content-wrap section {
         text-align: center;
-    }
-
-    .home-content-wrap section:nth-of-type(even) {
-        grid-template-columns: 1fr;
-    }
-
-    .home-content-wrap section > *:not(img):not(p:has(img)) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .home-content-wrap section > img,
-    .home-content-wrap section > p:has(img) {
-        grid-column: 1;
-        grid-row: 1;
     }
 }
 
@@ -1035,6 +1027,11 @@ a.button-link:active {
 
     .container {
         text-align: center;
+    }
+
+    .header-image {
+        float: none;
+        max-width: 100%;
     }
 
     .heading-jumbo {
@@ -1059,16 +1056,22 @@ a.button-link:active {
         width: 100%;
     }
 
+    .menu {
+        position: relative;
+    }
+
     .w-nav-menu.w--open {
         display: flex !important;
         flex-direction: column;
         position: absolute;
-        top: 100%;
-        left: 0;
+        top: calc(100% - 1px);
         right: 0;
+        min-width: 200px;
         background: white;
-        padding: 20px;
-        border-bottom: 1px solid #eee;
+        padding: 0;
+        border: 1px solid #53e477;
+        border-top: 1px solid #e2e2e2;
+        border-radius: 0 0 6px 6px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
     }
@@ -1076,9 +1079,21 @@ a.button-link:active {
     .navigation-item {
         width: 100%;
         text-align: left;
-        padding: 15px 0 !important;
+        padding: 10px 16px !important;
         margin: 0 !important;
-        border-bottom: 1px solid #f9f9f9;
+        border-bottom: 1px solid #f4f4f4;
+        font-size: 14px;
+        border-radius: 0;
+        text-decoration: none;
+    }
+
+    .navigation-item:last-child {
+        border-bottom: none;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .navigation-item:hover {
+        background-color: #f4faf5;
     }
 
     .menu-button {

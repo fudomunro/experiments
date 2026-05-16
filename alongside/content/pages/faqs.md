@@ -28,6 +28,3 @@ Yes all our workers are insured and covered under WCB.
 
 #### What are the your support workers qualifications?
 Our workers come highly qualified. All have been vetted and have backgrounds in care. They all have current certificates in CPR/ FIrst Aid and a clean vulnerable sector check.
-
-### Still have questions?
-If you have a question that isn't answered here, please feel free to reach out to us directly through the contact information in our footer. We are here to help!
