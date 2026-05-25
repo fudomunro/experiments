@@ -23,7 +23,7 @@ We offer compassionate live-in home support resulting in comfort, enhanced quali
 
 ## Services
 
-We start with a free consultation, in home up to 1 hour. We recognize the need for a personal care plan, with input from the senior and their loved ones. We offer compassionate "live-in" caregivers on a weekly or biweekly basis to come "alongside" seniors in their home, with the consistency of no more than 3 caregivers per household.
+We start with a free in-home consultation. We recognize the need for a personal care plan, with input from the senior and their loved ones. We offer compassionate "live-in" caregivers on a weekly or biweekly basis to come "alongside" seniors in their home, with the consistency of no more than 3 caregivers per household.
 
 <a href="{filename}/pages/services.md" class="button-link">Learn More</a>
 

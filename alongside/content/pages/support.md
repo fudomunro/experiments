@@ -6,7 +6,7 @@ subtitle: Comprehensive support within the comfort of your home, ensuring a safe
 
 <section markdown="1">
 
-## Personal Care & Hygiene
+### Personal Care & Hygiene
 
 We provide respectful assistance with personal care tasks to help our clients feel their best every day.
 
@@ -19,7 +19,7 @@ We provide respectful assistance with personal care tasks to help our clients fe
 
 <section markdown="1">
 
-## Light Housekeeping
+### Light Housekeeping
 
 Maintaining a clean and organized home is essential for safety and peace of mind. Our caregivers assist with:
 
@@ -32,7 +32,7 @@ Maintaining a clean and organized home is essential for safety and peace of mind
 
 <section markdown="1">
 
-## Medication & Communication
+### Medication & Communication
 
 We ensure that medications are taken correctly and that family members remain fully informed about their loved one's well-being.
 

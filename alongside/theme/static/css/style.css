@@ -553,9 +553,22 @@ a.button-link:active {
     opacity: 0.7;
 }
 
+.logo-motto {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
 .menu {
     z-index: 0;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     display: flex;
     position: absolute;
@@ -578,6 +591,9 @@ a.button-link:active {
     align-items: center;
     padding: 30px 50px;
     display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navigation-item {
@@ -748,7 +764,7 @@ a.button-link:active {
 
 .home-content-wrap section,
 .page-content-wrap section {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .home-content-wrap section p:has(img):not(.header-image) img,
@@ -1048,8 +1064,12 @@ a.button-link:active {
         padding-left: 0;
     }
 
+    .logo-motto {
+        font-size: 13px;
+    }
+
     .navigation {
-        padding: 20px 30px;
+        padding: 20px 30px 40px;
     }
 
     .footer-col {
@@ -1124,6 +1144,11 @@ a.button-link:active {
     .navigation {
         padding-left: 20px;
         padding-right: 20px;
+        padding-bottom: 35px;
+    }
+
+    .logo-motto {
+        font-size: 12px;
     }
 
     .menu-button,

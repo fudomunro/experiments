@@ -6,22 +6,22 @@ subtitle: Providing compassionate, expert care tailored to the unique health and
 
 <section markdown="1">
 
-Dementia Care
+### Dementia Care
 
  - All of Alongside management & staff are knowledgeable at a practical, emotional, and personal level with dementia care
  - We promise our clients to be cared for with respect and dignity, while balancing independence that’s safe for the individual
 
-Respite Care
+### Respite Care
 
  - Providing care for the caregiver, short or long term
  - Alongside can provide the support and expertise for you to do so
 
-Recovery Care
+### Recovery Care
 
  - In-home support post surgery so healing can take place in the therapeutic comforts of home
  - We can support seniors healing journey whether it be a for weeks or a few months, offer peace of mind to family and friends
 
-Palliative Care
+### Palliative Care
 
  - We provide compassionate caregivers who are committed to coming alongside your family and your loved one in their end of life journey
  - Our caregivers are experienced to provide compassionate dedicated care and comfort measures 
