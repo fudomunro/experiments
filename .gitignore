@@ -1,7 +1,5 @@
 .DS_Store
 output
-alongside/output
-alongside/new pictures
 __pycache__
 -e
 secret
