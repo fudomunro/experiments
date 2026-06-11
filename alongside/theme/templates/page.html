@@ -1,13 +1,22 @@
-{% extends "base.html" %}
-{% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
+{% extends "base.html" %} {% block title %}{{ page.title }} | {{ SITENAME }}{%
+endblock %} {% block content %}
+<div class="intro-header w-clearfix">
+    {% if page.header_image %}
+    <img
+        src="{{ SITEURL }}/images/{{ page.header_image }}"
+        loading="lazy"
+        alt="{{ page.header_image_alt }}"
+        class="header-image"
+    />
+    {% endif %}
+    <div class="heading-jumbo">{{ page.title }}</div>
+</div>
 
-{% block content %}
-<article>
-    <header>
-        <h1>{{ page.title }}</h1>
-    </header>
-    <div class="entry-content">
-        {{ page.content }}
-    </div>
-</article>
+{% if page.subtitle %}
+<div class="motto-wrap">
+    <div class="heading-jumbo-small">{{ page.subtitle }}</div>
+</div>
+{% endif %}
+
+<div class="page-content-wrap">{{ page.content }}</div>
 {% endblock %}

@@ -1,4 +1,7 @@
+import datetime
+
 AUTHOR = "Alongside Ltd."
+CURRENT_YEAR = datetime.datetime.now().year
 SITENAME = "Alongside Live-In Home Support"
 SITEURL = ""
 
@@ -24,13 +27,10 @@ PAGE_URL = "{slug}/"
 PAGE_SAVE_AS = "{slug}/index.html"
 
 # Static paths
-STATIC_PATHS = ["images", "extra"]
-EXTRA_PATH_METADATA = {
-    "extra/favicon.ico": {"path": "favicon.ico"},
-}
+STATIC_PATHS = ["images"]
 
 # Custom variables for Alongside updates
-HIRING_NEEDS_TEXT = "We are currently looking for compassionate caregivers in the Annapolis Valley area."
+HIRING_NEEDS_TEXT = "We are currently looking for compassionate caregivers."
 SHOW_HIRING_BANNER = True
 
 # Contact Info (Somerset as main office per STEP5.md)
@@ -41,12 +41,19 @@ CONTACT_ADDRESS = {
     "postal_code": "B0P 1E0",
 }
 CONTACT_PHONE = "(902) 578-9077"
-CONTACT_EMAIL = "info@alongsidens.ca"
+CONTACT_EMAIL = "alongsidehomecare@gmail.com"
 
 # Social links
 SOCIAL = (("Facebook", "https://www.facebook.com/Alongside-Live-In-Home-Support-Ltd"),)
 
 DEFAULT_PAGINATION = False
+
+# Markdown settings
+MARKDOWN = {
+    "extension_configs": {
+        "md_in_html": {},
+    },
+}
 
 # Use document-relative URLs for easier staging in a subdirectory
 RELATIVE_URLS = True

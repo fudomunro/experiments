@@ -6,17 +6,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
         <link
-            href="{{ SITEURL }}/theme/css/normalize.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <link
-            href="{{ SITEURL }}/theme/css/webflow.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <link
-            href="{{ SITEURL }}/theme/css/michelle-munros-marvelous-project.webflow.css"
+            href="{{ SITEURL }}/theme/css/style.css?v=22"
             rel="stylesheet"
             type="text/css"
         />
@@ -47,108 +37,9 @@
             type="image/x-icon"
         />
         <link href="{{ SITEURL }}/images/webclip.png" rel="apple-touch-icon" />
-
-        <style>
-            .hiring-banner {
-                background-color: #cceffa;
-                border: 1px solid #1f71ff;
-                padding: 25px;
-                margin-bottom: 40px;
-                border-radius: 8px;
-                text-align: center;
-                font-family: Montserrat, sans-serif;
-            }
-            .hiring-banner a {
-                color: #856404;
-                font-weight: bold;
-                text-decoration: underline;
-                display: inline-block;
-                margin-top: 10px;
-            }
-            .footer-contact-banner {
-                background-color: #f8f9fa;
-                padding: 60px 0;
-                border-top: 1px solid #e2e2e2;
-                font-family: Montserrat, sans-serif;
-            }
-            .footer-grid {
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: justify;
-                -webkit-justify-content: space-between;
-                -ms-flex-pack: justify;
-                justify-content: space-between;
-                -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            }
-            .footer-col {
-                -webkit-box-flex: 0;
-                -webkit-flex: 0 auto;
-                -ms-flex: 0 auto;
-                flex: 0 auto;
-                width: 30%;
-                min-width: 250px;
-                margin-bottom: 30px;
-            }
-            .footer-col h3 {
-                font-size: 14px;
-                line-height: 20px;
-                font-weight: 700;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                margin-bottom: 15px;
-                color: #333;
-            }
-            .footer-col p {
-                font-size: 15px;
-                line-height: 24px;
-                margin-bottom: 10px;
-                color: #555;
-            }
-            @media screen and (max-width: 767px) {
-                .footer-col {
-                    width: 100%;
-                }
-                .w-nav-menu.w--open {
-                    display: flex !important;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: white;
-                    padding: 20px;
-                    border-bottom: 1px solid #eee;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                    z-index: 1000;
-                }
-                .navigation-item {
-                    width: 100%;
-                    text-align: left;
-                    padding: 15px 0 !important;
-                    margin: 0 !important;
-                    border-bottom: 1px solid #f9f9f9;
-                }
-                .menu-button {
-                    cursor: pointer;
-                    display: block !important;
-                }
-            }
-        </style>
     </head>
     <body class="body">
-        <div
-            data-collapse="medium"
-            data-animation="default"
-            data-duration="400"
-            data-easing="ease"
-            data-easing2="ease"
-            role="banner"
-            class="navigation w-nav"
-        >
+        <div role="banner" class="navigation w-nav">
             <div class="navigation-wrap">
                 <a href="{{ SITEURL }}/" class="logo-link w-nav-brand"
                     ><img
@@ -159,35 +50,29 @@
                 /></a>
                 <div class="menu">
                     <nav role="navigation" class="navigation-items w-nav-menu">
-                        <a
-                            href="{{ SITEURL }}/"
-                            class="navigation-item button w-nav-link"
-                            >Home</a
-                        >
                         {% for p in pages|sort(attribute='title') %} {% if
                         p.slug in ['why-choose-us', 'services', 'working',
                         'faqs'] %}
                         <a
                             href="{{ SITEURL }}/{{ p.url }}"
                             class="navigation-item button w-nav-link"
-                            >{{ p.title }}</a
+                            >{{ p.title if p.slug != 'faqs' else 'F.A.Q.' }}</a
                         >
                         {% endif %} {% endfor %}
                     </nav>
                     <div class="menu-button w-nav-button">
-                        <img
-                            src="{{ SITEURL }}/images/menu-icon_1menu-icon.png"
-                            width="22"
-                            alt=""
-                            class="menu-icon"
-                        />
+                        {% if page %}{{ page.title if page.slug != 'faqs' else
+                        'F.A.Q.' }}{% else %}Menu{% endif %}
                     </div>
                 </div>
+                <span class="logo-motto"
+                    >If it matters to you! It matters to us!</span
+                >
             </div>
         </div>
 
         <div class="section">
-            <div class="container">
+            <div class="container" id="{{page.slug}}-content">
                 {% if SHOW_HIRING_BANNER and page and page.slug != 'working' %}
                 <div class="hiring-banner">
                     <div style="font-size: 1.2rem; font-weight: 500">
@@ -213,12 +98,6 @@
                             CONTACT_ADDRESS.province }}<br />
                             {{ CONTACT_ADDRESS.postal_code }}
                         </p>
-                        <h3>Satellite Office</h3>
-                        <p>
-                            33 Burchell St <br />
-                            Sydney Mines, CB<br />
-                            Nova Scotia<br />
-                        </p>
                     </div>
                     <div class="footer-col">
                         <h3>Contact Us</h3>
@@ -231,8 +110,23 @@
                         </p>
                         <p>
                             <a
-                                href="https://www.facebook.com/Alongside-Live-In-Home-Support-Ltd"
+                                href="{{ SOCIAL[0][1] if SOCIAL else '#' }}"
                                 target="_blank"
+                                class="facebook-link"
+                                ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    style="
+                                        vertical-align: middle;
+                                        margin-right: 6px;
+                                    "
+                                >
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    /></svg
                                 >Follow us on Facebook</a
                             >
                         </p>
@@ -248,17 +142,14 @@
         <div class="section footer">
             <div class="container">
                 <div class="footer-text w-richtext">
-                    <p>&copy; {{ SITENAME }} 2024. All Rights Reserved.</p>
+                    <p>
+                        &copy; {{ SITENAME }} 2024-{{ CURRENT_YEAR }}. All
+                        Rights Reserved.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <script
-            src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=605924c3eb76a480e956b1cc"
-            type="text/javascript"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
-        ></script>
         <script>
             (function () {
                 const btn = document.querySelector(".menu-button");
