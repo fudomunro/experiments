@@ -6,7 +6,7 @@ subtitle: Our mission is to provide competent, joyful, and attentive caregivers 
 
 Personal freedoms are not diminished but enhanced and supported in a safe, familiar caring environment. At Alongside we believe that providing care extends beyond the basic needs of daily living. As a home care agency specializing in live-in care, we believe that all seniors should be treated with dignity in their own homes. Alongside supports and respects individual freedoms, rights, choices, and privacy of our clients. We come "alongside" to assist the individual and encourage independence where possible. We allow seniors to "age in place", connected to loved ones and community.
 
-We are committed to be "alongside": caring for you and your loved ones every step of the way, every single day.
+We are committed to being "alongside": caring for you and your loved ones every step of the way, every single day.
 
 <section markdown="1">
 
@@ -14,7 +14,7 @@ We are committed to be "alongside": caring for you and your loved ones every ste
 
 The Co-founders of Alongside Live-In Home Support are Jo-Anne MacDonald and Gary Laird. Combined they have over 7 decades of caring for the elderly in various health and home care work settings. They bring an extensive skill set, a high standard of care, and a compassionate management approach stemming from extensive hands on experience.
 
-Seniors and their loved ones face many challenges who find themselves in need of 24hr care. Alongside services can bring you an individualized approach that is both cost effective and caring. Jo-Anne & Gary understand the need for a unique home care plan that suits the individual. They have experienced first hand that a cookie-cutter approach to home care does not honour the uniqueness of each client or their needs—nor that of the families.
+Seniors and their loved ones who find themselves in need of 24hr care face many challenges. Alongside services can bring you an individualized approach that is both cost effective and caring. Jo-Anne & Gary understand the need for a unique home care plan that suits the individual. They have experienced first hand that a cookie-cutter approach to home care does not honour the uniqueness of each client or their needs—nor that of the families.
 
 ![Jo-Anne and Gary](../images/about_us.jpg)
 

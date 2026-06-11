@@ -291,7 +291,7 @@ img {
 }
 
 blockquote {
-    border-left: 5px solid #53e477;
+    border-left: 5px solid var(--light-green);
     background-color: #f4faf5;
     border-radius: 6px;
     margin-top: 25px;
@@ -377,48 +377,16 @@ figcaption {
     user-select: none;
 }
 
-.w-nav-button::after {
-    content: "";
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid #666;
-}
-
 .w-nav-button:focus {
     outline: none;
-    border-color: #53e477;
+    border-color: var(--light-green);
 }
 
 .w-nav-button.w--open {
     background-color: #f9f9f9;
-    border-color: #53e477;
+    border-color: var(--light-green);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-}
-
-.w-nav-overlay {
-    position: absolute;
-    overflow: hidden;
-    display: none;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100%;
-}
-
-@media screen and (max-width: 991px) {
-    .w-nav[data-collapse="medium"] .w-nav-menu {
-        display: none;
-    }
-    .w-nav[data-collapse="medium"] .w-nav-button {
-        display: block;
-    }
 }
 
 @media screen and (max-width: 767px) {
@@ -615,35 +583,9 @@ a.button-link:active {
     opacity: 0.8;
 }
 
-.navigation-item.w--current {
-    opacity: 1;
-    color: #1a1b1f;
-    font-weight: 600;
-}
-
-.navigation-item.w--current:hover {
-    opacity: 0.8;
-    color: #32343a;
-}
-
-.navigation-item.w--current:active {
-    opacity: 0.7;
-    color: #32343a;
-}
-
 .navigation-item.button {
     margin-left: 10px;
     font-weight: 700;
-}
-
-.navigation-item.button.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 14px;
-}
-
-.logo-image {
-    display: block;
 }
 
 .navigation-items {
@@ -732,33 +674,6 @@ a.button-link:active {
 }
 
 /* ==========================================================================
-   Founder Section
-   ========================================================================== */
-
-.founder-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
-}
-
-.founder-bio {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.founder-bio img {
-    width: 120px;
-    height: auto;
-}
-
-.founder-bio h4,
-.founder-bio h6 {
-    margin: 0;
-}
-
-/* ==========================================================================
    Markdown Content Sections
    ========================================================================== */
 
@@ -840,7 +755,7 @@ a.button-link:active {
     letter-spacing: 1px;
     margin-bottom: 15px;
     color: #333;
-    border-bottom: 2px solid #53e477;
+    border-bottom: 2px solid var(--light-green);
     padding-bottom: 8px;
 }
 
@@ -863,7 +778,7 @@ a.button-link:active {
 }
 
 .faq-toc a:hover {
-    color: #53e477;
+    color: var(--light-green);
 }
 
 .faq-content {
@@ -912,7 +827,7 @@ a.button-link:active {
 .accordion-header::after {
     content: "+";
     font-size: 24px;
-    color: #53e477;
+    color: var(--light-green);
     font-weight: bold;
     transition: transform 0.3s;
 }
@@ -947,6 +862,14 @@ a.button-link:active {
    ========================================================================== */
 
 @media screen and (max-width: 991px) {
+    .w-nav .w-nav-menu {
+        display: none;
+    }
+
+    .w-nav .w-nav-button {
+        display: block;
+    }
+
     .button {
         justify-content: center;
     }
@@ -958,10 +881,6 @@ a.button-link:active {
 
     .logo-link.w--current {
         flex: 1;
-    }
-
-    .menu-icon {
-        display: block;
     }
 
     .menu {
@@ -1004,10 +923,6 @@ a.button-link:active {
 
     .navigation-items {
         background-color: #fff;
-    }
-
-    .founder-grid {
-        grid-template-columns: 1fr;
     }
 
     .faq-layout {
@@ -1078,6 +993,7 @@ a.button-link:active {
 
     .menu {
         position: relative;
+        z-index: 2;
     }
 
     .w-nav-menu.w--open {
@@ -1089,7 +1005,7 @@ a.button-link:active {
         min-width: 200px;
         background: white;
         padding: 0;
-        border: 1px solid #53e477;
+        border: 1px solid var(--light-green);
         border-top: 1px solid #e2e2e2;
         border-radius: 0 0 6px 6px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

@@ -1,4 +1,7 @@
+import datetime
+
 AUTHOR = "Alongside Ltd."
+CURRENT_YEAR = datetime.datetime.now().year
 SITENAME = "Alongside Live-In Home Support"
 SITEURL = ""
 
@@ -24,10 +27,7 @@ PAGE_URL = "{slug}/"
 PAGE_SAVE_AS = "{slug}/index.html"
 
 # Static paths
-STATIC_PATHS = ["images", "extra"]
-EXTRA_PATH_METADATA = {
-    "extra/favicon.ico": {"path": "favicon.ico"},
-}
+STATIC_PATHS = ["images"]
 
 # Custom variables for Alongside updates
 HIRING_NEEDS_TEXT = "We are currently looking for compassionate caregivers."
@@ -53,7 +53,6 @@ MARKDOWN = {
     "extension_configs": {
         "md_in_html": {},
     },
-    "extensions": ["md_in_html"],
 }
 
 # Use document-relative URLs for easier staging in a subdirectory

@@ -16,15 +16,15 @@ We seek integrity and commitment first and foremost. Patience is a virtue and a 
 
 <section markdown="1">
 
-> ## How to Apply
-> 
-> To apply for a position with Alongside, please follow these instructions:
-> 
-> 1. **Prepare documents**: Resume, CPR/First Aid certification, and 3 professional references.
-> 2. **Include Phone Number**: Please ensure you include a valid phone number for a screening call.
-> 3. **Submit**: Email documents to [alongsidehomecare@gmail.com](mailto:alongsidehomecare+jobs@gmail.com)
->
-> *Note: Successful applicants require a clean Criminal Record and Vulnerable Sector Check.*
+## How to Apply
+
+To apply for a position with Alongside, please follow these instructions:
+
+1. **Prepare documents**: Resume, CPR/First Aid certification, and 2 professional references.
+2. **Include Phone Number**: Please ensure you include a valid phone number for a screening call.
+3. **Submit**: Email documents to [alongsidehomecare@gmail.com](mailto:alongsidehomecare+jobs@gmail.com)
+
+*Note: Successful applicants require a clean Criminal Record and Vulnerable Sector Check.*
 
 </section>
 

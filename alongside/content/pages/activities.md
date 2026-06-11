@@ -6,7 +6,7 @@ subtitle: Supporting independence and quality of life through personalized daily
 
 <section markdown="1">
 
-### Companionship & Social Support
+## Companionship & Social Support
 
 - **Matching Caregivers**: We match clients and caregivers to foster a joyful and meaningful interpersonal relationship.
 - **Social Visits**: Our caregivers support and partake in social visits and community outings where possible.
@@ -17,7 +17,7 @@ subtitle: Supporting independence and quality of life through personalized daily
 
 <section markdown="1">
 
-### Nutritional Care & Cooking
+## Nutritional Care & Cooking
 
 We recognize the importance of our clients' diets in supporting wellness and comfort. We support personal menu choices and can cook for an array of specialized diets, including diabetes-friendly, gluten-free, and specific caloric needs.
 
