@@ -1,6 +1,6 @@
 {
-    "title": "Group Event Coordinator",
-    "description": "A lean prototype for coordinating in-person group events with AI-powered scheduling assistance. Built with React, TypeScript, and Supabase, it allows users to create events, invite friends, and let an intelligent agent negotiate the best time and location based on everyone's constraints and availability.",
+    "title": "E Co",
+    "description": "Plan group events without the back-and-forth. Create an event, invite your group by email, and get everyone scheduled — no sign-up required for guests. Each person submits their available time slots and constraints (dietary needs, budget, accessibility), and once everyone responds the best time is automatically confirmed with a calendar invite. Alternate times are available to switch to, and notifications keep everyone informed at every step. Built with React, TypeScript, and Supabase with passwordless magic-link authentication.",
     "demo_url": "http://138.197.8.215:8080",
     "repo_url": "",
     "order": 1

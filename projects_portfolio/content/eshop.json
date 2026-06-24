@@ -1,0 +1,6 @@
+{
+    "title": "eShop Buddy",
+    "description": "A tool for browsing Nintendo eShop deals with filtering capabilities the official store doesn't offer — most notably, filtering by minimum discount percentage. Includes both a zero-dependency CLI for quick lookups and a Flask web service that tracks the full catalog (~3700 games) in SQLite with price history over time.\n\nThe web interface features deal browsing, game search, and per-game price history charts.",
+    "repo_url": "https://github.com/fudomunro/eshop",
+    "order": 7
+}

@@ -1,0 +1,6 @@
+{
+    "title": "Excellentman",
+    "description": "A CLI tool for running [Newman](https://github.com/postmanlabs/newman) (Postman's CLI runner) with parameters sourced from Excel spreadsheets. Each worksheet drives a separate test run, enabling data-driven API testing at scale. Supports custom field transformations, HTML and XML report generation, and customizable report templates.\n\nAvailable on [PyPI](https://pypi.org/project/excellentman/) — install with `pip install excellentman`.",
+    "repo_url": "https://github.com/fudomunro/excellentman",
+    "order": 5
+}

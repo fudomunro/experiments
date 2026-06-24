@@ -1,0 +1,6 @@
+{
+    "title": "NOPZ",
+    "description": "A CLI tool that enforces regulations on a codebase using a dual-agent system. A **Clerk** agent makes code changes while a **Bureaucrat** validates them, looping until all regulations pass or an iteration limit is hit. Regulations are defined as decorated Python functions with deterministic checks, and an LLM reviewer (\"Number One\") validates regulation quality before execution begins.\n\nSupports multiple LLM backends via [Simon Willison's llm library](https://github.com/simonw/llm), git-based branch management per iteration, and stuck detection to abort unproductive loops.",
+    "repo_url": "https://github.com/fudomunro/nopz",
+    "order": 6
+}
