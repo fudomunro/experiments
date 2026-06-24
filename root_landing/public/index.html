@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Unified Designs - Under Construction</title>
+        <title>Alec Munro</title>
         <style>
             body {
                 font-family:
@@ -11,47 +11,71 @@
                     Helvetica, Arial, sans-serif;
                 line-height: 1.6;
                 color: #333;
-                max-width: 960px;
+                max-width: 1100px;
                 margin: 0 auto;
                 padding: 4rem 2rem;
-                text-align: center;
                 background-color: #f9f9f9;
             }
             header {
-                margin-bottom: 3rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
             }
             h1 {
-                font-size: 3rem;
-                margin-bottom: 0.5rem;
+                font-size: 2.25rem;
+                margin-bottom: 0;
                 color: #222;
             }
             .status-badge {
                 display: inline-block;
                 background-color: #eee;
                 color: #666;
-                padding: 0.5rem 1rem;
+                padding: 0.35rem 0.75rem;
                 border-radius: 20px;
-                font-size: 0.9rem;
+                font-size: 0.75rem;
                 font-weight: 600;
                 text-transform: uppercase;
                 letter-spacing: 0.05em;
-                margin-bottom: 2rem;
+            }
+            .columns {
+                display: grid;
+                grid-template-columns: 1fr 300px;
+                gap: 4rem;
+                align-items: start;
             }
             p.lead {
                 font-size: 1.25rem;
                 color: #555;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
-            .links {
+            .content p {
+                margin-bottom: 1.5rem;
+            }
+            .cta-button {
+                display: block;
+                background-color: #0066cc;
+                color: white;
+                padding: 1rem 2.5rem;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 1.1rem;
+                font-weight: 600;
+                text-align: center;
+                transition:
+                    background-color 0.2s,
+                    transform 0.2s;
+            }
+            .cta-button:hover {
+                background-color: #0052a3;
+                transform: translateY(-2px);
+            }
+            .sidebar {
                 display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 2rem;
-                margin-bottom: 4rem;
+                flex-direction: column;
+                gap: 1.5rem;
             }
             .card {
                 background: white;
-                padding: 2rem;
+                padding: 1.5rem;
                 border-radius: 8px;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
                 text-decoration: none;
@@ -60,19 +84,20 @@
                     transform 0.2s,
                     box-shadow 0.2s;
                 border: 1px solid #eee;
-                width: 250px;
             }
             .card:hover {
-                transform: translateY(-5px);
+                transform: translateY(-3px);
                 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             }
             .card h2 {
                 margin-top: 0;
+                margin-bottom: 0.5rem;
                 color: #0066cc;
+                font-size: 1.2rem;
             }
             .card p {
                 margin-bottom: 0;
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 color: #666;
             }
             footer {
@@ -81,23 +106,59 @@
                 font-size: 0.9rem;
                 border-top: 1px solid #eee;
                 padding-top: 2rem;
+                text-align: center;
+            }
+            @media (max-width: 700px) {
+                .columns {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+                body {
+                    padding: 2rem 1.25rem;
+                }
+                h1 {
+                    font-size: 1.75rem;
+                }
             }
         </style>
     </head>
     <body>
         <header>
-            <h1>Unified Designs</h1>
+            <h1>Alec Munro</h1>
             <div class="status-badge">Under Construction</div>
         </header>
 
-        <main>
-            <p class="lead">
-                I am currently consolidating my digital presence and rebuilding
-                this site. While the main landing page is in progress, you can
-                explore my writing and current projects below.
-            </p>
+        <main class="columns">
+            <div class="content">
+                <p class="lead">
+                    I've been bringing folk together online to build software
+                    for almost 30 years, and I want to help a struggling
+                    engineering department. CTO/VP/Director is generally the
+                    elevation I'm looking for, but if the title is manager and
+                    the rest is a good fit, that won't bother me.
+                </p>
+                <p>
+                    If you have an engineering department with any sort of
+                    significant struggle, reach out and let's talk about how I
+                    could help. Whether it's digging out of deep technical debt,
+                    facilitating difficult conversations, designing events for
+                    org alignment, or leadership coaching, I've done it before,
+                    and I want to help you with it.
+                </p>
+                <p>
+                    I'm also available for fractional/contract work — book a
+                    free consultation.
+                </p>
+            </div>
 
-            <nav class="links">
+            <nav class="sidebar">
+                <a
+                    href="https://calendly.com/alecmunro/engineering-consultation"
+                    class="cta-button"
+                    target="_blank"
+                >
+                    Book a Free Consultation
+                </a>
                 <a href="https://writing.unified-designs.com" class="card">
                     <h2>Writing</h2>
                     <p>

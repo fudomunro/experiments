@@ -1,0 +1,6 @@
+{
+    "title": "Deck",
+    "description": "A developer cockpit for managing multiple software projects from a single dashboard. Monitor Docker containers, track git activity, browse GitHub issues, and interact with AI coding agents — all in one place. Features real-time agent sessions with tool-call visibility, live iframe previews with subdomain routing, reusable agent recipes, and Tailscale-based identity for seamless team access.",
+    "repo_url": "https://github.com/fudomunro/deck",
+    "order": 8
+}
