@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-SITES=("blog" "projects" "landing")
+SITES=("blog" "projects" "landing" "magic-nexus")
+
+SSH_CMD="ssh -i /Users/alec/Pictures/Work/lindsay/event-coordinator/deploy/keys/id_rsa -o StrictHostKeyChecking=no"
 
 deploy_site() {
     local site="$1"
@@ -22,6 +24,12 @@ deploy_site() {
             echo "▸ Deploying landing page → unified-designs.com"
             rsync -avz -e "$SSH_CMD" --delete root_landing/public/ root@138.197.8.215:/var/www/unified-designs.com/html/
             ;;
+        magic-nexus)
+            echo "▸ Triggering deploy via server git pull..."
+            ssh -i /Users/alec/Pictures/Work/lindsay/event-coordinator/deploy/keys/id_rsa -o StrictHostKeyChecking=no root@138.197.8.215 \
+                "cd /opt/portfolio-projects/magic-nexus && git pull origin main && docker compose build && docker compose up -d"
+            echo "▸ Deployed → themagicnexus.com"
+            ;;
         *)
             echo "Unknown site: $site" >&2
             echo "Available: ${SITES[*]}" >&2
@@ -29,8 +37,6 @@ deploy_site() {
             ;;
     esac
 }
-
-SSH_CMD="ssh -i /Users/alec/Pictures/Work/lindsay/event-coordinator/deploy/keys/id_rsa -o StrictHostKeyChecking=no"
 
 if [[ $# -eq 0 ]]; then
     echo "Deploying all sites..."
