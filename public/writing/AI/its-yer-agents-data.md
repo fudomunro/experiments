@@ -4,7 +4,7 @@ Category: Writing
 Slug: its-yer-agents-data
 Lang: en
 
-A good dozen years ago, as one of my last pieces of public writing before shutting up, I wrote about the growing asymetry between how service providers were collecting data, and the proper ownership of that data.
+A good dozen years ago, as one of my last pieces of public writing before shutting up, I wrote about the growing asymetry between how service providers were collecting data, and the proper ownership of that data. (Insert link here)
 
 # If you're not paying for it, someone's paying for you
 
@@ -14,9 +14,9 @@ The internet evolved around "free" services, with an idea that attracting enough
 
 As these free services became massive and entrenched, some of them did find a paying user base, but most relied on selling their users to other companies in some form. While users had some understanding that this was happening, Silicon Valley's allergy to regulation made sure it stayed ambiguous exactly what the companies were "allowed" to do.
 
-Beyond the murkiness of the service transaction itself, this also made it hard to move your data between services, because "your data" wasn't clearly defined anywhere, and different services offered unique import/export options. Standardizing in this area increases opportunities for competition and improves overall user experience.
+# What Data?
 
-Finally, a critical mass of users prepared to BYOD (Bring your own Data,) means application developers can move into more complex functionality before relating to scaling concerns. They can even continue to host their data locally even though your UI lives somewhere else, since their browser can read from the former to populate the latter.
+Beyond the murkiness of the service transaction itself, this also made it hard to move your data between services, because "your data" wasn't clearly defined anywhere, and different services offered unique import/export options. This was a decent moat for vendors, but bad for competition and overall user experience.
 
 # It's MY data
 

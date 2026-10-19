@@ -1,3 +1,6 @@
+import hashlib
+from pathlib import Path
+
 AUTHOR = 'Alec Munro'
 SITENAME = 'Unified Designs Blog'
 SITEURL = 'https://writing.unified-designs.com'
@@ -29,3 +32,9 @@ ARTICLE_URL = '{slug}.html'
 ARTICLE_SAVE_AS = '{slug}.html'
 ARTICLE_LANG_URL = '{lang}/{slug}.html'
 ARTICLE_LANG_SAVE_AS = '{lang}/{slug}.html'
+
+# Cache-busting: changes whenever any theme CSS file changes, so Cloudflare and
+# browsers fetch the new stylesheet instead of serving a stale cached copy.
+CSS_VERSION = hashlib.sha256(
+    b''.join(p.read_bytes() for p in sorted(Path(__file__).parent.joinpath('my-theme/static/css').glob('*.css')))
+).hexdigest()[:10]
