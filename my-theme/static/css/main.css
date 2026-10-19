@@ -12,37 +12,45 @@
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
-@import url("fonts.css");
 
 /***** Global *****/
+:root {
+    --font-text: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
 /* Body */
 body {
     background: #F5F4EF;
-    color: #000305;
-    font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.429;
+    color: #1f2328;
+    font-size: 112.5%; /* Base font size: 18px */
+    font-family: var(--font-text);
+    font-optical-sizing: auto;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
 /* Headings */
-h1 {font-size: 2em }
-h2 {font-size: 1.571em}	/* 22px */
-h3 {font-size: 1.429em}	/* 20px */
-h4 {font-size: 1.286em}	/* 18px */
-h5 {font-size: 1.143em}	/* 16px */
-h6 {font-size: 1em}		/* 14px */
+h1 {font-size: 2em}		/* 36px */
+h2 {font-size: 1.5em}		/* 27px */
+h3 {font-size: 1.25em}		/* 22.5px */
+h4 {font-size: 1.125em}		/* 20px */
+h5 {font-size: 1em}
+h6 {font-size: 1em}
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    line-height: 1.1;
-    margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: var(--font-text);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: .6em;
 }
 
-h3, h4, h5, h6 { margin-top: .8em; }
+h2, h3, h4, h5, h6 { margin-top: 1.6em; }
 
 hr { border: 2px solid #EEEEEE; }
 
@@ -50,15 +58,14 @@ hr { border: 2px solid #EEEEEE; }
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-    color: #C74350;
-    padding: 0 1px;
+    color: #B23A47;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
 }
 a:hover, a:active {
-    background-color: #C74350;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #333;
+    color: #8A2C37;
+    text-decoration-thickness: 2px;
 }
 
 h1 a:hover {
@@ -67,8 +74,8 @@ h1 a:hover {
 
 /* Paragraphs */
 div.line-block,
-p { margin-top: 1em;
-    margin-bottom: 1em;}
+p { margin-top: 0;
+    margin-bottom: 1.1em;}
 
 strong, b {font-weight: bold;}
 em, i {font-style: italic;}
@@ -84,19 +91,22 @@ ol {
     margin: 0em 0 0 1.5em;
 }
 
-li { margin-top: 0.5em;
-    margin-bottom: 1em; }
+li { margin-top: 0.3em;
+    margin-bottom: 0.3em; }
 
 .post-info {
-    float:right;
-    margin:10px;
-    padding:5px;
+    color: #6b6b6b;
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin: 0 0 1.75em 0;
 }
 
 .post-info p{
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+.post-info abbr {text-decoration: none;}
 
 .readmore { float: right }
 
@@ -104,12 +114,24 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+code, kbd, samp, pre {font-family: var(--font-mono); font-size: 0.85em;}
+pre code {font-size: 1em;}
+pre {
+    background-color: #f3f2ee;
+    border-radius: 6px;
+    line-height: 1.5;
+    margin: 0 0 1.25em 0;
+    overflow: auto;
+    padding: 0.9em 1.1em;
+}
 
 /* Quotes */
 blockquote {
-    margin: 20px;
+    border-left: 3px solid #E3C9CC;
+    color: #444;
     font-style: italic;
+    margin: 0 0 1.25em 0;
+    padding: 0 0 0 1.1em;
 }
 cite {}
 
@@ -177,16 +199,17 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 	/* Banner */
 #banner h1 {
-    font-size: 3.571em;
-    line-height: 1.0;
-    margin-bottom: .3em;
+    font-size: 2.25em;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0.4em 0 .5em 0;
 }
 
 #banner h1 a:link, #banner h1 a:visited {
-    color: #000305;
+    color: #1f2328;
     display: block;
-    font-weight: bold;
-    margin: 0 0 0 .2em;
+    font-weight: 700;
+    margin: 0 0 0 .5em;
     text-decoration: none;
 }
 #banner h1 a:hover, #banner h1 a:active {
@@ -199,8 +222,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 	/* Main Nav */
 #banner nav {
-    background: #000305;
-    font-size: 1.143em;
+    background: #1f2328;
+    font-size: 0.9em;
     overflow: auto;
     line-height: 30px;
     margin: 0 auto 2em auto;
@@ -247,8 +270,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     background: #fff;
     margin-bottom: 2em;
     overflow: hidden;
-    padding: 20px;
-    max-width: 760px;
+    padding: 2em 2.5em;
+    max-width: 710px;
 
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -263,11 +286,11 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 }
 #featured figure img {display: block; float: right;}
 
-#featured h2 {color: #C74451; font-size: 1.714em; margin-bottom: 0.333em;}
-#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+#featured h2 {font-size: 1.5em;}
+#featured h3 {font-size: 1.25em;}
 
 #featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
-#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+#featured h3 a:hover, #featured h3 a:active {color: #B23A47;}
 
 /*
 	Body
@@ -276,8 +299,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     background: #fff;
     margin-bottom: 2em;
     overflow: hidden;
-    padding: 20px 20px;
-    max-width: 760px;
+    padding: 2em 2.5em;
+    max-width: 710px;
 
     border-radius: 10px;
     -moz-border-radius: 10px;
@@ -292,8 +315,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 #extras ul {list-style: none; margin: 0;}
 #extras li {border-bottom: 1px solid #fff;}
 #extras h2 {
-    color: #C74350;
-    font-size: 1.429em;
+    color: #B23A47;
+    font-size: 1.25em;
     margin-bottom: .25em;
     padding: 0 3px;
 }
@@ -306,7 +329,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
     padding: .3em .25em;
 }
 
-#extras a:hover, #extras a:active {color: #fff;}
+#extras a:hover, #extras a:active {color: #B23A47;}
 
 	/* Blogroll */
 #extras .blogroll {
@@ -363,9 +386,9 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
-.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
-.entry-title a:visited {background-color: #fff;}
+.entry-title {font-size: 2.25em; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.35em; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #1f2328;}
+.entry-title a:hover {color: #B23A47;}
 
 .hentry .post-info * {font-style: normal;}
 
@@ -378,13 +401,10 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #posts-list {list-style: none; margin: 0;}
 #posts-list .hentry {padding-left: 10px; position: relative;}
 
-#posts-list footer {
-    left: 10px;
-    position: relative;
-    float: left;
-    top: 0.5em;
-    max-width: 190px;
-}
+#posts-list .hentry h1 {font-size: 1.5em; margin-bottom: 0.3em;}
+#posts-list .hentry h1 a:link, #posts-list .hentry h1 a:visited {color: #1f2328; text-decoration: none;}
+#posts-list .hentry h1 a:hover {color: #B23A47;}
+#posts-list footer {margin-bottom: 1em;}
 
 	/* About the Author */
 #about-author {
@@ -437,3 +457,12 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 #add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 #add-comment * {margin-bottom: .5em;}
+
+/* Small screens */
+@media (max-width: 700px) {
+    body {font-size: 106.25%;} /* 17px */
+    #content, #featured {padding: 1.25em 1.25em; border-radius: 0;}
+    .entry-title {font-size: 1.85em;}
+    #banner h1 {font-size: 1.75em;}
+    #banner nav {border-radius: 0;}
+}
