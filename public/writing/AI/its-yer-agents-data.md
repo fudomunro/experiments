@@ -13,7 +13,7 @@ The internet evolved around "free" services, with an idea that attracting enough
 
 ![Photo]({attach}ryan.jpeg)
 
-"The first lesson of Silicon Valley, actually, is that you only think about the user, the experience. You actually don't think about the money. Ever."
+*"The first lesson of Silicon Valley, actually, is that you only think about the user, the experience. You actually don't think about the money. Ever."*
 
 Beyond the murkiness of the service transaction itself, this also made it hard to move your data between services, because "your data" wasn't clearly defined anywhere, and different services offered unique import/export options. This was a decent moat for vendors, but bad for competition and overall user experience.
 
@@ -21,7 +21,7 @@ Beyond the murkiness of the service transaction itself, this also made it hard t
 
 Middle of last year, Tailscale asked me if I had any ideas for what they could do better. I had been doing some agentic development, and I mentioned it would be nice to constrain agent connectivity. A couple months later, they announced Aperture, which provides some of that functionality, among others, and I started using it. I didn't do all that much, but I appreciated how Aperture appeared as a service in *my* network, with very little setup. I thought that could be an interesting approach to data governance as well.
 
-Which led me to create Aegis:
+Which led me to create [Aegis](https://github.com/fudomunro/aegis)
 
 ![Photo]({attach}aegis.svg)
 
@@ -37,7 +37,7 @@ I can't say I've done much in the way of concrete estimations, but in the past I
 
 # Next steps?
 
-I've got some relatively ambitious issues created already, so I expect I'll have a couple of notable releases in the near future. Besides that, for this to move forward:
+I've got [some relatively ambitious issues](https://github.com/fudomunro/aegis/issues) created already, so I expect I'll have a couple of notable releases in the near future. Besides that, for this to move forward:
 
 1. I need to get more familiar with the code. I used an agent to write Aegis, with only very light review by myself. I've still put in a couple dozen hours of testing and decision making, but at least for the core of Aegis, I think it's important I understand it better before I ask more folk to use it.
 2. Set up the sync maintenance project.
