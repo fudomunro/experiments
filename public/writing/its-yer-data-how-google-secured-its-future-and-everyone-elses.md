@@ -2,7 +2,7 @@ Title: It's yer data! - how Google secured its future, and everyone else's
 Date: 2014-08-29 23:31
 Author: Alec Munro
 Tags: data, development, do.no.evil, future, google, process, python, vision, web
-Slug: its-yer-data-how-google-secured-its-future-and-everyone-elses
+Slug: its-yer-data
 
 Dear Google,  
 
