@@ -363,7 +363,7 @@
       box-shadow: var(--shadow);
       padding: 24px;
       display: grid;
-      grid-template-columns: 148px 1fr;
+      grid-template-columns: 156px 1fr;
       gap: 20px;
       align-items: start;
     }
@@ -378,7 +378,7 @@
     .event-when {
       background: var(--paper-deep);
       border-radius: 12px;
-      padding: 12px 8px;
+      padding: 12px 10px;
       text-align: center;
       border: 1px solid var(--line);
     }
@@ -387,7 +387,7 @@
       display: block;
       font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 4px;
@@ -397,9 +397,10 @@
       display: block;
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.05rem;
       line-height: 1.25;
       color: var(--ink);
+      white-space: nowrap;
     }
 
     .event-body h3 {
@@ -874,7 +875,7 @@
       .event-notes { grid-template-columns: 1fr; }
 
       .event-card {
-        grid-template-columns: 132px 1fr;
+        grid-template-columns: 156px 1fr;
       }
     }
 
@@ -925,8 +926,28 @@
       }
 
       .event-when {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 0.35em;
         width: fit-content;
-        min-width: 88px;
+        padding: 10px 16px;
+        white-space: nowrap;
+      }
+
+      .event-when .dow {
+        display: inline;
+        margin-bottom: 0;
+        font-size: 0.78rem;
+      }
+
+      .event-when .dow::after {
+        content: ":";
+      }
+
+      .event-when .time {
+        display: inline;
+        font-size: 1rem;
       }
     }
   </style>
@@ -976,17 +997,16 @@
         <p class="section-label">01 · Events</p>
         <h2 class="section-title" id="events-title">Upcoming &amp; ongoing events</h2>
         <p class="section-lead">
-          Listings currently centre on Open Mindfulness Groups. This section is built to hold
-          other ACC events as well — webinars, workshops, lectures, and gatherings — so visitors
-          can find what’s on without hunting through separate pages.
+          Listings currently centre on Open Mindfulness Groups, but will include
+          other ACC events as well — webinars, workshops, lectures, and gatherings.
         </p>
 
         <ul class="event-list" id="event-list">
           <li class="event-card">
             <div class="event-aside">
               <div class="event-when">
-                <span class="dow">Thu</span>
-                <span class="time">3:30–<br />4:30 PM</span>
+                <span class="dow">Thursday</span>
+                <span class="time">3:30–4:30 PM</span>
               </div>
               <div class="event-actions">
                 <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Tacoma+Plaza+Community+Health+Centre+Main+Street" target="_blank" rel="noopener noreferrer">
@@ -1018,8 +1038,8 @@
           <li class="event-card">
             <div class="event-aside">
               <div class="event-when">
-                <span class="dow">Tue</span>
-                <span class="time">7–8<br />PM</span>
+                <span class="dow">Tuesday</span>
+                <span class="time">7–8 PM</span>
               </div>
               <div class="event-actions">
                 <a class="btn btn-primary" href="https://zoom.us/j/96572559680?pwd=QWVraEtPeExIZUdFaFg0c2RBOFA0Zz09" target="_blank" rel="noopener noreferrer">
@@ -1054,8 +1074,8 @@
           <li class="event-card">
             <div class="event-aside">
               <div class="event-when">
-                <span class="dow">Wed</span>
-                <span class="time">12–1<br />PM</span>
+                <span class="dow">Wednesday</span>
+                <span class="time">12–1 PM</span>
               </div>
               <div class="event-actions">
                 <a class="btn btn-primary" href="https://zoom.us/j/97159187619?pwd=bDNzc2orTitycWJscnhlamtBZFZUQT09" target="_blank" rel="noopener noreferrer">
