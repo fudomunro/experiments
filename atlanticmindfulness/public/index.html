@@ -363,9 +363,16 @@
       box-shadow: var(--shadow);
       padding: 24px;
       display: grid;
-      grid-template-columns: 88px 1fr auto;
+      grid-template-columns: 148px 1fr;
       gap: 20px;
       align-items: start;
+    }
+
+    .event-aside {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: stretch;
     }
 
     .event-when {
@@ -433,7 +440,6 @@
       flex-direction: column;
       gap: 8px;
       align-items: stretch;
-      min-width: 140px;
     }
 
     .btn {
@@ -868,16 +874,8 @@
       .event-notes { grid-template-columns: 1fr; }
 
       .event-card {
-        grid-template-columns: 72px 1fr;
+        grid-template-columns: 132px 1fr;
       }
-
-      .event-actions {
-        grid-column: 1 / -1;
-        flex-direction: row;
-        min-width: 0;
-      }
-
-      .event-actions .btn { flex: 1; }
     }
 
     @media (max-width: 720px) {
@@ -920,6 +918,10 @@
       .event-card {
         grid-template-columns: 1fr;
         gap: 14px;
+      }
+
+      .event-aside {
+        width: 100%;
       }
 
       .event-when {
@@ -981,15 +983,25 @@
 
         <ul class="event-list" id="event-list">
           <li class="event-card">
-            <div class="event-when" aria-hidden="true">
-              <span class="dow">Thu</span>
-              <span class="time">3:30–<br />4:30 PM</span>
+            <div class="event-aside">
+              <div class="event-when">
+                <span class="dow">Thu</span>
+                <span class="time">3:30–<br />4:30 PM</span>
+              </div>
+              <div class="event-actions">
+                <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Tacoma+Plaza+Community+Health+Centre+Main+Street" target="_blank" rel="noopener noreferrer">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10z" />
+                    <circle cx="12" cy="11" r="2.2" />
+                  </svg>
+                  Map
+                </a>
+              </div>
             </div>
             <div class="event-body">
               <h3>Open Mindfulness Group — In person</h3>
               <p>
-                <strong>Thursdays, 3:30–4:30 PM</strong> · Community Health Centre, next to Sobeys
-                in Tacoma Plaza, off Main Street.
+                Community Health Centre, next to Sobeys in Tacoma Plaza, off Main Street.
               </p>
               <p>
                 Sessions include 15–20 minutes of mindfulness practice (some guided, some in
@@ -1001,27 +1013,29 @@
                 <span class="tag">In person</span>
               </div>
             </div>
-            <div class="event-actions">
-              <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Tacoma+Plaza+Community+Health+Centre+Main+Street" target="_blank" rel="noopener noreferrer">
-                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10z" />
-                  <circle cx="12" cy="11" r="2.2" />
-                </svg>
-                Map
-              </a>
-            </div>
           </li>
 
           <li class="event-card">
-            <div class="event-when" aria-hidden="true">
-              <span class="dow">Tue</span>
-              <span class="time">7–8<br />PM</span>
+            <div class="event-aside">
+              <div class="event-when">
+                <span class="dow">Tue</span>
+                <span class="time">7–8<br />PM</span>
+              </div>
+              <div class="event-actions">
+                <a class="btn btn-primary" href="https://zoom.us/j/96572559680?pwd=QWVraEtPeExIZUdFaFg0c2RBOFA0Zz09" target="_blank" rel="noopener noreferrer">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="6" width="14" height="12" rx="2" />
+                    <path d="M16 10l6-3v10l-6-3z" />
+                  </svg>
+                  Join Zoom
+                </a>
+              </div>
             </div>
             <div class="event-body">
               <h3>Open Mindfulness Group — Zoom</h3>
               <p>
-                <strong>Tuesdays, 7:00–8:00 PM</strong> · Online via Zoom. Download Zoom for free
-                on computer, tablet, or phone — you don’t need an account to join.
+                Online via Zoom. Download Zoom for free on computer, tablet, or phone — you
+                don’t need an account to join.
               </p>
               <p>
                 Zoom link:
@@ -1035,27 +1049,28 @@
                 <span class="tag">Online</span>
               </div>
             </div>
-            <div class="event-actions">
-              <a class="btn btn-primary" href="https://zoom.us/j/96572559680?pwd=QWVraEtPeExIZUdFaFg0c2RBOFA0Zz09" target="_blank" rel="noopener noreferrer">
-                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="2" y="6" width="14" height="12" rx="2" />
-                  <path d="M16 10l6-3v10l-6-3z" />
-                </svg>
-                Join Zoom
-              </a>
-            </div>
           </li>
 
           <li class="event-card">
-            <div class="event-when" aria-hidden="true">
-              <span class="dow">Wed</span>
-              <span class="time">12–1<br />PM</span>
+            <div class="event-aside">
+              <div class="event-when">
+                <span class="dow">Wed</span>
+                <span class="time">12–1<br />PM</span>
+              </div>
+              <div class="event-actions">
+                <a class="btn btn-primary" href="https://zoom.us/j/97159187619?pwd=bDNzc2orTitycWJscnhlamtBZFZUQT09" target="_blank" rel="noopener noreferrer">
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="6" width="14" height="12" rx="2" />
+                    <path d="M16 10l6-3v10l-6-3z" />
+                  </svg>
+                  Join Zoom
+                </a>
+              </div>
             </div>
             <div class="event-body">
               <h3>Open Mindfulness Group — Zoom</h3>
               <p>
-                <strong>Wednesdays, 12:00–1:00 PM</strong> · Online via Zoom. No prior mindfulness
-                experience is necessary; simply show up.
+                Online via Zoom. No prior mindfulness experience is necessary; simply show up.
               </p>
               <p>
                 Zoom link:
@@ -1068,15 +1083,6 @@
                 <span class="tag">No registration</span>
                 <span class="tag">Online</span>
               </div>
-            </div>
-            <div class="event-actions">
-              <a class="btn btn-primary" href="https://zoom.us/j/97159187619?pwd=bDNzc2orTitycWJscnhlamtBZFZUQT09" target="_blank" rel="noopener noreferrer">
-                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="2" y="6" width="14" height="12" rx="2" />
-                  <path d="M16 10l6-3v10l-6-3z" />
-                </svg>
-                Join Zoom
-              </a>
             </div>
           </li>
         </ul>
