@@ -385,6 +385,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
+#content > article .entry-content img { display: block; height: auto; }
 .entry-title {font-size: 2.25em; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.35em; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #1f2328;}
 .entry-title a:hover {color: #B23A47;}

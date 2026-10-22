@@ -17,21 +17,17 @@ The internet evolved around "free" services, with an idea that attracting enough
 
 Beyond the murkiness of the service transaction itself, this also made it hard to move your data between services, because "your data" wasn't clearly defined anywhere, and different services offered unique import/export options. This was a decent moat for vendors, but bad for competition and overall user experience.
 
-Aegis helps!
+# The Opportunity
 
-# The oppportunity
-
-Middle of last year, Tailscale asked me if I had any ideas for what they could do better. I had been doing some agentic development, and I mentioned it would be nice to constrain agent connectivity. A couple months later, they announced Aperture, which provides some of that functionality, among others, and I started using it. I didn't do all that much, but I appreciated how Aperture appeared as a service in *my* network, but I didn't really have to do any set up or run anything. After a bit of cogitating, I realized that this set up was nearly ideal for BYOD, and that agentic data access provided a somewhat urgent need for it to exist.
+Middle of last year, Tailscale asked me if I had any ideas for what they could do better. I had been doing some agentic development, and I mentioned it would be nice to constrain agent connectivity. A couple months later, they announced Aperture, which provides some of that functionality, among others, and I started using it. I didn't do all that much, but I appreciated how Aperture appeared as a service in *my* network, with very little setup. I thought that could be an interesting approach to data governance as well.
 
 Which led me to create...
 
 ![Photo]({attach}aegis.svg)
 
-Aegis is my first piece of software built to address this problem. I've done some earlier drafts on it, but I wanted to lean into the Tailscale connection, so I started from scratch in Go (well, MiMo-v2.6-pro did.) Aegis is built to help you take back control of your data and manage it going forward, while enabling secure agentic access to that data.
+*Aegis* has two very simple pieces. The first is a library API, providing standard methods for working with your data. The second is a prompt interceptor that watches for agents looking for your data, and injects guidance about using the library API. By default, anyone inside your Tailnet is granted full access to the data library, but you're free to adjust that how you like.
 
-Aegis has two very simple pieces. The first is a data library API, providing standard methods for working with your data. The second is a prompt interceptor that watches for agents attempting to access your data, and injects guidance about using the media library API. By default, anyone inside your Tailnet is granted full access to the data library, but you're free to adjust that how you like.
-
-The usage model for Aegis is to start working with your data in agents, and Aegis will learn about it and guide you to establish and maintain canonical stores.
+Aegis is built to help you take back control of your data and manage it going forward, while enabling secure agentic access to that data. The usage model for Aegis is to start working with your data in agents, and Aegis will learn about it and guide you to establish and maintain canonical stores.
 
 # Why now?
 
