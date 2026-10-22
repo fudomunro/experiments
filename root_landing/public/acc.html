@@ -348,47 +348,6 @@
     }
 
     /* ——— Events ——— */
-    .event-toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 28px;
-    }
-
-    .event-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .chip {
-      appearance: none;
-      border: 1px solid var(--line);
-      background: var(--card);
-      color: var(--ink-soft);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font: inherit;
-      font-size: 0.88rem;
-      cursor: pointer;
-      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    }
-
-    .chip:hover { border-color: var(--sage); color: var(--sage-deep); }
-
-    .chip[aria-pressed="true"] {
-      background: var(--ink);
-      border-color: var(--ink);
-      color: var(--paper);
-    }
-
-    .event-count {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
     .event-list {
       display: grid;
       gap: 16px;
@@ -408,8 +367,6 @@
       gap: 20px;
       align-items: start;
     }
-
-    .event-card[hidden] { display: none; }
 
     .event-when {
       background: var(--paper-deep);
@@ -471,11 +428,6 @@
       padding: 4px 10px;
     }
 
-    .tag.free {
-      color: var(--accent-deep);
-      background: var(--accent-soft);
-    }
-
     .event-actions {
       display: flex;
       flex-direction: column;
@@ -501,6 +453,10 @@
     }
 
     .btn:active { transform: translateY(1px); }
+
+    .btn-icon {
+      flex-shrink: 0;
+    }
 
     .btn-primary {
       background: var(--accent);
@@ -549,18 +505,6 @@
       color: var(--muted);
       font-size: 0.94rem;
     }
-
-    .empty-state {
-      display: none;
-      padding: 28px;
-      border: 1px dashed var(--line);
-      border-radius: var(--radius);
-      color: var(--muted);
-      text-align: center;
-      background: rgba(255, 253, 249, 0.6);
-    }
-
-    .empty-state.show { display: block; }
 
     /* ——— About ACC ——— */
     .mission {
@@ -1035,22 +979,8 @@
           can find what’s on without hunting through separate pages.
         </p>
 
-        <div class="event-toolbar">
-          <div class="event-filters" role="group" aria-label="Filter events">
-            <button class="chip" type="button" data-filter="all" aria-pressed="true">All events</button>
-            <button class="chip" type="button" data-filter="open-mindfulness-groups" aria-pressed="false">Open Mindfulness Groups</button>
-            <button class="chip" type="button" data-filter="online" aria-pressed="false">Online</button>
-            <button class="chip" type="button" data-filter="in-person" aria-pressed="false">In person</button>
-          </div>
-          <p class="event-count" id="event-count" aria-live="polite">Showing 3 events</p>
-        </div>
-
         <ul class="event-list" id="event-list">
-          <li
-            class="event-card"
-            data-category="open-mindfulness-groups in-person"
-            data-event
-          >
+          <li class="event-card">
             <div class="event-when" aria-hidden="true">
               <span class="dow">Thu</span>
               <span class="time">3:30–<br />4:30 PM</span>
@@ -1066,24 +996,23 @@
                 silence), movement practice, another practice period, and open discussion.
               </p>
               <div class="event-tags">
-                <span class="tag free">Free</span>
+                <span class="tag">Free</span>
                 <span class="tag">No registration</span>
                 <span class="tag">In person</span>
-                <span class="tag">Ongoing</span>
               </div>
             </div>
             <div class="event-actions">
               <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Tacoma+Plaza+Community+Health+Centre+Main+Street" target="_blank" rel="noopener noreferrer">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10z" />
+                  <circle cx="12" cy="11" r="2.2" />
+                </svg>
                 Map
               </a>
             </div>
           </li>
 
-          <li
-            class="event-card"
-            data-category="open-mindfulness-groups online"
-            data-event
-          >
+          <li class="event-card">
             <div class="event-when" aria-hidden="true">
               <span class="dow">Tue</span>
               <span class="time">7–8<br />PM</span>
@@ -1101,24 +1030,23 @@
                 </a>
               </p>
               <div class="event-tags">
-                <span class="tag free">Free</span>
+                <span class="tag">Free</span>
                 <span class="tag">No registration</span>
                 <span class="tag">Online</span>
-                <span class="tag">Ongoing</span>
               </div>
             </div>
             <div class="event-actions">
               <a class="btn btn-primary" href="https://zoom.us/j/96572559680?pwd=QWVraEtPeExIZUdFaFg0c2RBOFA0Zz09" target="_blank" rel="noopener noreferrer">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="6" width="14" height="12" rx="2" />
+                  <path d="M16 10l6-3v10l-6-3z" />
+                </svg>
                 Join Zoom
               </a>
             </div>
           </li>
 
-          <li
-            class="event-card"
-            data-category="open-mindfulness-groups online"
-            data-event
-          >
+          <li class="event-card">
             <div class="event-when" aria-hidden="true">
               <span class="dow">Wed</span>
               <span class="time">12–1<br />PM</span>
@@ -1136,23 +1064,22 @@
                 </a>
               </p>
               <div class="event-tags">
-                <span class="tag free">Free</span>
+                <span class="tag">Free</span>
                 <span class="tag">No registration</span>
                 <span class="tag">Online</span>
-                <span class="tag">Ongoing</span>
               </div>
             </div>
             <div class="event-actions">
               <a class="btn btn-primary" href="https://zoom.us/j/97159187619?pwd=bDNzc2orTitycWJscnhlamtBZFZUQT09" target="_blank" rel="noopener noreferrer">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="6" width="14" height="12" rx="2" />
+                  <path d="M16 10l6-3v10l-6-3z" />
+                </svg>
                 Join Zoom
               </a>
             </div>
           </li>
         </ul>
-
-        <div class="empty-state" id="event-empty" role="status">
-          No events match that filter right now. Try <strong>All events</strong>.
-        </div>
       </div>
     </section>
 
@@ -1338,37 +1265,6 @@
         window.addEventListener("scroll", updateActiveSection, { passive: true });
         window.addEventListener("resize", updateActiveSection);
       }
-
-      // Event filters
-      var chips = document.querySelectorAll(".chip[data-filter]");
-      var cards = document.querySelectorAll("[data-event]");
-      var empty = document.getElementById("event-empty");
-      var countEl = document.getElementById("event-count");
-
-      function applyFilter(filter) {
-        var shown = 0;
-        cards.forEach(function (card) {
-          var cats = (card.getAttribute("data-category") || "").split(/\s+/);
-          var show = filter === "all" || cats.indexOf(filter) !== -1;
-          card.hidden = !show;
-          if (show) shown += 1;
-        });
-        if (empty) empty.classList.toggle("show", shown === 0);
-        if (countEl) {
-          countEl.textContent =
-            shown === 1 ? "Showing 1 event" : "Showing " + shown + " events";
-        }
-      }
-
-      chips.forEach(function (chip) {
-        chip.addEventListener("click", function () {
-          var filter = chip.getAttribute("data-filter") || "all";
-          chips.forEach(function (c) {
-            c.setAttribute("aria-pressed", c === chip ? "true" : "false");
-          });
-          applyFilter(filter);
-        });
-      });
 
       // Subscribe form (front-end only demo)
       var form = document.getElementById("subscribe-form");
