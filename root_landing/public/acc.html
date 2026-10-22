@@ -1350,19 +1350,22 @@
         });
       }
 
-      if ("IntersectionObserver" in window && sections.length) {
-        var observer = new IntersectionObserver(
-          function (entries) {
-            var visible = entries
-              .filter(function (e) { return e.isIntersecting; })
-              .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; });
-            if (visible[0] && visible[0].target && visible[0].target.id) {
-              setActive(visible[0].target.id);
-            }
-          },
-          { rootMargin: "-30% 0px -50% 0px", threshold: [0.1, 0.25, 0.5] }
-        );
-        sections.forEach(function (section) { observer.observe(section); });
+      function updateActiveSection() {
+        if (!sections.length) return;
+        var marker = window.innerHeight * 0.3;
+        var current = sections[0].id;
+        sections.forEach(function (section) {
+          if (section.getBoundingClientRect().top <= marker) {
+            current = section.id;
+          }
+        });
+        setActive(current);
+      }
+
+      if (sections.length) {
+        updateActiveSection();
+        window.addEventListener("scroll", updateActiveSection, { passive: true });
+        window.addEventListener("resize", updateActiveSection);
       }
 
       // Event filters
