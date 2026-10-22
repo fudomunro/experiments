@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-SITES=("blog" "projects" "landing")
+SITES=("blog" "projects" "landing" "acc")
 
 SSH_CMD="ssh -i /Users/alec/Pictures/Work/lindsay/event-coordinator/deploy/keys/id_rsa -o StrictHostKeyChecking=no"
 
@@ -23,6 +23,10 @@ deploy_site() {
         landing)
             echo "▸ Deploying landing page → unified-designs.com"
             rsync -avz -e "$SSH_CMD" --delete root_landing/public/ root@138.197.8.215:/var/www/unified-designs.com/html/
+            ;;
+        acc)
+            echo "▸ Deploying ACC page → atlanticmindfulness.ca"
+            rsync -avz -e "$SSH_CMD" --delete atlanticmindfulness/public/ root@138.197.8.215:/var/www/atlanticmindfulness.ca/html/
             ;;
         *)
             echo "Unknown site: $site" >&2
